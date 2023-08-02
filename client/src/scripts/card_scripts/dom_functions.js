@@ -8,11 +8,20 @@ import * as text from './card_text.js'
     const DATA = getData();
     if (utils.isEmptyObject(DATA)) throw new Error('data is not defined');
 
+    deleteHorozontalCards(); 
+
     Object.keys(DATA["count"]).forEach(cardName => {
       let newLi = document.createElement('li');
       newLi.innerHTML = cardName;
       newLi.style.backgroundColor = CARD_COLORS[parseInt(cardName, 10)];
       document.getElementById(HORIZONTAL_CARDS_ID).appendChild(newLi);
+    });
+  };
+
+  function deleteHorozontalCards() {
+    document.querySelectorAll('#horizontal-cards li')
+      .forEach(element => {
+        element.remove();
     });
   };
 
