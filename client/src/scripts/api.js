@@ -23,4 +23,3 @@ export async function getCountedWord(textAreaValue) {
         console.error(err);
     };
 };
-
