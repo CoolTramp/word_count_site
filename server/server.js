@@ -4,7 +4,7 @@ import {router} from './rounters/word_count_api.js';
 import cors from 'cors'; 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`the port was started in the port ${PORT}`);

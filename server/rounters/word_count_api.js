@@ -4,7 +4,7 @@ import { WordCounter } from '../src/word_counter.js'
 const router = express.Router();
 
 router.post('/contraction', (req, res) => {
-    console.log(`server recived request ${typeof req.body}`);
+    console.log('request from user');
     res.send(JSON.stringify({"data": new WordCounter(req.body.text).wordContainer}));
 });
 
