@@ -1,7 +1,7 @@
 import * as constants from './constants.js'
 import { renderUserTextInTextArea } from './dom/dom_functions.js'
 import { getCountedWord } from './api.js'
-
+import { showCard } from './card_scripts/dom_functions.js'
 
 constants.inputChooseFile.addEventListener('change', event => {
     const userFile = event.target.files[0];
@@ -10,7 +10,8 @@ constants.inputChooseFile.addEventListener('change', event => {
 
 constants.bntStartCountWord.addEventListener('click', () => {
     if (hasValueTextArea) 
-        getCountedWord(getValueTextArea()); 
+        getCountedWord(getValueTextArea());
+    showCard();
 });
 
 function hasValueTextArea() {

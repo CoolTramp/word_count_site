@@ -92,3 +92,7 @@ import * as text from './card_text.js'
     card.innerHTML = text.getCommonCardText();
   };
     
+  export function showCard() {
+    console.log(document.getElementById('archive-container'))
+    document.getElementById('archive-container').style.gridTemplateRows = '1fr';
+  }

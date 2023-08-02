@@ -3,7 +3,7 @@
   <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WORD COUNT</title>  <script defer src="main.4d0b34fc6b377b1c2c8e.js"></script></head>
+        <title>WORD COUNT</title>  <script defer src="main.0992c535fee1413154ed.js"></script></head>
   <body>
     <style>
         #container-user-text-menu {
@@ -70,18 +70,20 @@
     <br>
     <style>
         #archive-container {
-            display: flex;
+            display: grid;
             align-items: end;
             margin-left: 30px;
-            width: auto;
-            height: auto;
             font-size: 25px;
             font-family: 'RobotoMono';
+            grid-template-rows: 0fr;
+            overflow: hidden;
+            transition: grid-template-rows 1s;
         }
-        .card-container {
+       .card-container {
             display: flex;
             width: auto;
             height: auto;
+            min-height: 0;
             position: relative;
         }
         li {
@@ -145,7 +147,7 @@
         }
     
     </style>
-    <div id="archive-container">
+     <div id="archive-container" class="collapse">
         <div class="card-container">
             <ul id="vertical-cards">
                 <li id="info" class="active-card" 
@@ -172,6 +174,16 @@
                 </div>
             </div>
         </div>
-    </div>
+     </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </body>
 </html>

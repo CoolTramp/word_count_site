@@ -1,18 +1,20 @@
 <style>
     #archive-container {
-        display: flex;
+        display: grid;
         align-items: end;
         margin-left: 30px;
-        width: auto;
-        height: auto;
         {{!-- border: 1px solid black; --}}
         font-size: 25px;
         font-family: 'RobotoMono';
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: grid-template-rows 1s;
     }
-    .card-container {
+   .card-container {
         display: flex;
         width: auto;
         height: auto;
+        min-height: 0;
         {{!-- border: 1px solid black; --}}
         position: relative;
         {{!-- background-color:rgb(133, 200, 216); --}}
@@ -80,7 +82,7 @@
     }
 
 </style>
-<div id="archive-container">
+ <div id="archive-container" class="collapse">
     <div class="card-container">
         <ul id="vertical-cards">
             <li id="info" class="active-card" 
@@ -107,4 +109,14 @@
             </div>
         </div>
     </div>
-</div>
+ </div>
+
+
+
+
+
+
+
+
+
+
