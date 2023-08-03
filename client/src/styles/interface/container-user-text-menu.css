@@ -1,0 +1,9 @@
+#container-user-text-menu {
+    margin: 0 auto;
+    width: 650px;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(96, 157, 159);
+    border-radius: 0 5px 5px;
+}
+

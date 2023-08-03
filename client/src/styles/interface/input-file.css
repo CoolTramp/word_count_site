@@ -1,0 +1,13 @@
+#input-choose-file {
+    font-size: 18px;
+    width: 640px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(133, 159, 159);
+}
+
+#input-choose-file::after {
+  font-weight: 600;
+  content: ' txt format only';
+  background-color: rgb(171, 211, 211);
+  border-radius: 0 0 4px 0;
+}

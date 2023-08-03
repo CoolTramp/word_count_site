@@ -1,53 +1,4 @@
-<style>
-    #container-user-text-menu {
-        margin: 0 auto;
-        width: 650px;
-        height: auto;
-        border: 3px solid rgb(0, 0, 0);
-        background-color: rgb(96, 157, 159);
-        border-radius: 0 5px 5px;
-    }
-    #text-area-user-text {
-        width: 648px;
-        font-size: 17px;
-        padding: 10px 0 10px;
-        position: relative;
-        top: 7px;
-        {{!-- background-color:  rgb(146, 170, 171); --}}
-        background-color: rgb(215, 215, 150);
-    }
-    .button-style {
-        font-family: 'RobotoMono';
-        cursor: pointer;
-        transition: background-color 1s;
-    }
-    #input-choose-file {
-        font-size: 18px;
-        width: 640px;
-        border-radius: 0 0 10px 10px;
-        background-color: rgb(133, 159, 159);
-    }
 
-    #input-choose-file::after {
-      font-weight: 600;
-      content: ' txt format only';
-      background-color: rgb(171, 211, 211);
-      border-radius: 0 0 4px 0;
-    }
-
-    #bnt-start-count-word {
-        font-size: 22px;
-        font-weight: 500;
-        margin: 5px 0 0 400px;
-        padding: 5px;
-        border-radius: 10px 10px 0 0 ;
-        background-color: rgb(232, 132, 51);
-    }
-    #bnt-start-count-word:hover {
-        top: -20px;
-        background-color: rgb(228, 103, 0);
-    }
-</style>
 <div id="container-user-text-menu">
     <div>
         <textarea name="" id="text-area-user-text" cols="30" rows="10">
@@ -55,9 +6,14 @@
     </div>
     <div>
         <input type="file" class="button-style" id="input-choose-file">
-        <br>
-        <button id="bnt-start-count-word" class="button-style">
-            start count word
-        </button>
+        <div id="buttons-panel">
+            <div id="icons">
+                <div id="trash" class="icons-style"></div>
+                <div id="download" class="icons-style"> </div>
+            </div>
+                <button id="bnt-start-count-word" class="button-style">
+                    start count word
+                </button>
+            </div>
     </div>
 </div>
