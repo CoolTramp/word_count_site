@@ -93,6 +93,10 @@ import * as text from './card_text.js'
   };
     
   export function showCard() {
-    console.log(document.getElementById('archive-container'))
     document.getElementById('archive-container').style.gridTemplateRows = '1fr';
+  }
+
+  export function setInfoCardAsDefault() {
+    const INFO_CARD = document.getElementById('info');
+    changeStylesForChosenCard(INFO_CARD);
   }
