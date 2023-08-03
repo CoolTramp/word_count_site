@@ -7,7 +7,7 @@
 
 #input-choose-file::after {
   font-weight: 600;
-  content: ' txt format only';
+  content: ' txt, pdf format only';
   background-color: rgb(171, 211, 211);
   border-radius: 0 0 4px 0;
 }
