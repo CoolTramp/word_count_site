@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "path": "^0.12.7",
+    "pdfjs-dist": "^3.9.179",
     "url": "^0.11.1"
   }
 }

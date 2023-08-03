@@ -1,6 +1,3 @@
-// import './scripts/decontraction_api.js'
-// import './scripts/word_count.js'
-
 import './styles/index.css'
 import './styles/fonts.css'
 import './styles/interface/text-area.css'
@@ -9,6 +6,10 @@ import './styles/interface/input-file.css'
 import './styles/interface/button-panel/icons.css'
 import './styles/interface/button-panel/button-panel.css'
 import './styles/interface/container-user-text-menu.css'
+
+import './styles/cards/archive-container.css'
+import './styles/cards/cards.css'
+
 import './scripts/card_scripts/handlers.js'
 import './scripts/card_scripts/data.js'
 import './scripts/user_input_handling.js'

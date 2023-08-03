@@ -1,0 +1,11 @@
+#archive-container {
+    display: grid;
+    align-items: end;
+    margin-left: 30px;
+    /* border: 1px solid black; */
+    font-size: 25px;
+    font-family: 'RobotoMono';
+    grid-template-rows: 0fr;
+    overflow: scroll;
+    transition: grid-template-rows 1s;
+}
