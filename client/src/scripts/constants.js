@@ -1,5 +1,8 @@
-export const inputChooseFile = document.getElementById('input-choose-file');
-export const bntStartCountWord = document.getElementById('bnt-start-count-word');
-export const trash = document.getElementById('trash');
+export const inputChooseFile = document.getElementById("input-choose-file");
+export const bntStartCountWord = document.getElementById(
+  "bnt-start-count-word"
+);
+export const trash = document.getElementById("trash");
+export const progressBar = document.getElementById("progress-bar");
 
-export const URL_CONTRACTION = 'http://localhost:3000/contraction';
+export const URL_CONTRACTION = "http://localhost:3000/contraction";

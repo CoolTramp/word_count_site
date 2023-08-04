@@ -1,0 +1,14 @@
+#progress-bar {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.hidden {
+  opacity: 0;
+}
+.show-progress-bar {
+  opacity: 40%;
+}
