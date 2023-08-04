@@ -21,7 +21,7 @@ function defineFormat(userFileType) {
  * @param {HTMLElement} element - a place in webpage
  * where will be to render the user text
  */
-export function readFileAndDisplayContent(userFile, element) {
+export function readFileAndDisplayContent(userFile) {
   const userTextFormat = defineFormat(userFile.type);
   if (!userTextFormat)  {
     console.warn('format is not defined');
@@ -33,7 +33,5 @@ export function readFileAndDisplayContent(userFile, element) {
     'pdf' : pdfFormat
   }
 
-  formatReaders[userTextFormat](userFile, element);
+  formatReaders[userTextFormat](userFile);
 };
-
-// pdfFormat(userFile, element);

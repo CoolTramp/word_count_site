@@ -1,0 +1,14 @@
+#input-user {
+    position: relative;
+    width: 650px;
+    height: 300px;
+    overflow: hidden;
+    /* font-weight: 400; */
+}
+  #text-area-user-text {
+    /* border: 1px solid black; */
+    /* overflow: scroll; */
+    /* position: relative; */
+    z-index: 1;
+    font-size: 30px;
+  }

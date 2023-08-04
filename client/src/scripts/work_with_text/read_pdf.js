@@ -1,3 +1,5 @@
+import { updateElementContent } from '../dom/dom_utils.js'
+
 const script = document.createElement('script');
 script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js';
 document.head.appendChild(script);
@@ -15,12 +17,12 @@ export async function pdfFormat(userFile, element) {
       for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
         const page = await pdf.getPage(pageNumber);
         const textContent = await page.getTextContent();
+        
         textContent.items.forEach(function (textItem) {
           pdfText += textItem.str + ' ';
         });
+        updateElementContent(pdfText);
       }
-
-      element.textContent = pdfText;
     };
     reader.readAsArrayBuffer(userFile);
   }

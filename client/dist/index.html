@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WORD COUNT</title>  <script defer src="main.f2d87e2cfb49010d487c.js"></script></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+    <title>WORD COUNT</title>  <script defer src="main.73840a3dacf6ccd76346.js"></script></head>
   <body>
     
     <div id="container-user-text-menu">
         <div>
-            <textarea name="" id="text-area-user-text" cols="30" rows="10">
-            </textarea>
-        </div>
+            <div id="input-user">
+                
+              <span id="progress-bar" class="hidden">0</span> 
+              <div id="text-area-user-text">
+                <div id="text-container">
+                </div>
+              </div>
+            
+            </div>    </div>
         <div>
             <input type="file" accept=".txt,.pdf" class="button-style" id="input-choose-file">
             <div id="buttons-panel">

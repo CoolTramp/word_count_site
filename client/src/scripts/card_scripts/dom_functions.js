@@ -99,4 +99,5 @@ import * as text from './card_text.js'
   export function setInfoCardAsDefault() {
     const INFO_CARD = document.getElementById('info');
     changeStylesForChosenCard(INFO_CARD);
+    renderCardInfo();
   }

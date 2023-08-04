@@ -1,18 +1,10 @@
-import { textAreaUserText } from '../constants.js'
+import { quill } from '../work_with_text/quill.js';
 
-function renderText(element, fileContent) {
-    element.innerText = fileContent;
-};
-
-function changeValue(element, fileContent) {
-    element.value = fileContent;
-};
-
-export function updateElementContent(element, fileContent) {
-    renderText(element, fileContent);
-    changeValue(element, fileContent);
+export function updateElementContent(fileContent) {
+    cleanTextArea();
+    quill.insertText(0, fileContent);
 };
 
 export function cleanTextArea() {
-    textAreaUserText.value = '';
-}
+    quill.deleteText(0, quill.getLength());
+};
